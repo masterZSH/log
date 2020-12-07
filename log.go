@@ -47,7 +47,7 @@ func (o *Out) Write(p []byte) (n int, err error) {
 	pt := path.Join(o.BaseDir, day)
 	s, _ := os.Stat(pt)
 	if s == nil {
-		if err = os.Mkdir(pt, 0766); err != nil {
+		if err = os.MkdirAll(pt, 0766); err != nil {
 			return
 		}
 	}
