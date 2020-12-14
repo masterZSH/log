@@ -31,4 +31,4 @@ go get -u github.com/masterZSH/log
 // 2020-12-12日12点的日志文件
 /data/log/services/auth/2020-12-12/12.log
 
-后续用influxdb存储实时日志
+读取文件数据到influxdb
